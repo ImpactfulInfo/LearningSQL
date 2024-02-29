@@ -1,0 +1,12 @@
+--Select FirstName, LastName, Gender, Salary,
+--Count(Gender) Over (Partition by Gender) as TotalNumber
+--From [SQL Tutorial].dbo.EmployeeDemographics dem
+--Join [SQL Tutorial].dbo.EmployeeSalary sal
+--ON dem.EmployeeID = sal.EmployeeID
+
+--Select FirstName, LastName, Gender, Salary, Count(Gender)
+--From [SQL Tutorial].dbo.EmployeeDemographics dem
+--Join [SQL Tutorial].dbo.EmployeeSalary sal
+--ON dem.EmployeeID = sal.EmployeeID
+--Group By FirstName, LastName, Gender, Salary
+---- Run to see difference, Group by will not show all info uncluding the aggregate function
